@@ -1,1 +1,4 @@
-<p>home works!</p>
+<div (mouseover)="setHoverName(true)" (mouseout)="setHoverName(false)">
+    <div  *ngIf = "!delayedIsHoveredOverName" [@fadeAnimation] = "isHoveredOverName ? 'hidden' : 'visible'"  class = "name">Ethan Janicki</div>
+    <div *ngIf = "delayedIsHoveredOverName" [@fadeAnimation] = "isHoveredOverName ?'visible' : 'hidden' " class = "name">Tarova</div>
+</div>
